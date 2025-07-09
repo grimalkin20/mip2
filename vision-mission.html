@@ -14,6 +14,102 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <style>
+            .header-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+        .btn-admission {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn-admission:hover {
+            background: linear-gradient(135deg, #e55a2b 0%, #e8851a 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+            color: white;
+        }
+
+        .btn-contact {
+            background: transparent;
+            color: #333;
+            border: 2px solid #ff6b35;
+            padding: 10px 18px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn-contact:hover {
+            background: #ff6b35;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .header-buttons {
+                justify-content: center;
+                margin-top: 15px;
+                flex-direction: column;
+                gap: 8px;
+            }
+            
+            .btn-admission,
+            .btn-contact {
+                width: 100%;
+                justify-content: center;
+                font-size: 13px;
+                padding: 10px 16px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .header-buttons {
+                flex-direction: row;
+                gap: 5px;
+            }
+            
+            .btn-admission,
+            .btn-contact {
+                width: auto;
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+        }
+
+        .page-header {
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: 60px 0;
+            margin-bottom: 0;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+    </style>
     <!-- Top Bar -->
     <div class="top-bar">
         <div class="container">
@@ -57,8 +153,14 @@
                 </div>
                 <div class="col-md-3">
                     <div class="header-buttons text-end">
-                        <a href="admission.html" class="btn btn-primary me-2">Admission 2024-25</a>
-                        <a href="contact.html" class="btn btn-outline-primary">Contact Us</a>
+                        <a href="admission.html" class="btn btn-admission me-2">
+                            <i class="fas fa-graduation-cap me-1"></i>
+                            Admission 2025-26
+                        </a>
+                        <a href="contact.html" class="btn btn-contact">
+                            <i class="fas fa-phone me-1"></i>
+                            Contact Us
+                        </a>
                     </div>
                 </div>
             </div>
@@ -84,8 +186,7 @@
                             <li><a href="director-message.html" class="dropdown-item">Director Message</a></li>
                             <li><a href="principal-message.html" class="dropdown-item">Principal Message</a></li>
                             <li><a href="vision-mission.html" class="dropdown-item">Vision & Mission</a></li>
-                            <li><a href="alumni.html" class="dropdown-item">Alumni</a></li>
-                            <li><a href="index-three.html" class="dropdown-item">Research</a></li>
+                            
                         </ul>
                     </li>
                     <li class="nav-item dropdown navigation__menu--item has-child has-arrow">
@@ -173,7 +274,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="vision-image">
-                        <img src="https://via.placeholder.com/600x400/ff6b35/ffffff?text=Our+Vision" alt="Our Vision" class="img-fluid rounded shadow">
+                        <img src="assets/about/medical-team.png" alt="Our Vision" class="img-fluid rounded shadow">
                     </div>
                 </div>
             </div>
@@ -219,7 +320,7 @@
                 </div>
                 <div class="col-lg-6 order-lg-1">
                     <div class="mission-image">
-                        <img src="https://via.placeholder.com/600x400/ff6b35/ffffff?text=Our+Mission" alt="Our Mission" class="img-fluid rounded shadow">
+                        <img src="assets/about/Robotic-machine-11.jpg" alt="Our Mission" class="img-fluid rounded shadow">
                     </div>
                 </div>
             </div>
