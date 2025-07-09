@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
 </head>
 <body>
     <!-- Top Bar -->
@@ -57,8 +58,14 @@
                 </div>
                 <div class="col-md-3">
                     <div class="header-buttons text-end">
-                        <a href="admission.html" class="btn btn-primary me-2">Admission 2024-25</a>
-                        <a href="contact.html" class="btn btn-outline-primary">Contact Us</a>
+                        <a href="admission.html" class="btn btn-admission me-2">
+                            <i class="fas fa-graduation-cap me-1"></i>
+                            Admission 2025-26
+                        </a>
+                        <a href="contact.html" class="btn btn-contact">
+                            <i class="fas fa-phone me-1"></i>
+                            Contact Us
+                        </a>
                     </div>
                 </div>
             </div>
@@ -502,150 +509,7 @@
     <!-- Custom JS -->
     <script src="js/script.js"></script>
 
-    <style>
-        .page-header {
-            background: var(--gradient-primary);
-            color: var(--white);
-            padding: 60px 0;
-            margin-bottom: 0;
-        }
-
-        .page-header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        .breadcrumb {
-            background: transparent;
-            margin: 0;
-        }
-
-        .breadcrumb-item a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-        }
-
-        .breadcrumb-item.active {
-            color: var(--white);
-        }
-
-        .filter-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .filter-btn {
-            background: var(--white);
-            border: 2px solid var(--primary-color);
-            color: var(--primary-color);
-            padding: 10px 25px;
-            border-radius: 25px;
-            font-weight: 500;
-            transition: var(--transition);
-            cursor: pointer;
-        }
-
-        .filter-btn:hover,
-        .filter-btn.active {
-            background: var(--primary-color);
-            color: var(--white);
-        }
-
-        .gallery-item {
-            transition: var(--transition);
-        }
-
-        .gallery-item.hidden {
-            display: none;
-        }
-
-        .gallery-card {
-            position: relative;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            height: 300px;
-        }
-
-        .gallery-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .gallery-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .gallery-card:hover .gallery-image {
-            transform: scale(1.1);
-        }
-
-        .gallery-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: var(--transition);
-        }
-
-        .gallery-card:hover .gallery-overlay {
-            opacity: 1;
-        }
-
-        .gallery-content {
-            text-align: center;
-            color: var(--white);
-            padding: 20px;
-        }
-
-        .gallery-content h6 {
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .gallery-content p {
-            margin-bottom: 15px;
-            font-size: 0.9rem;
-        }
-
-        .gallery-content .btn {
-            border-radius: 20px;
-        }
-
-        #modalImage {
-            max-width: 100%;
-            height: auto;
-            border-radius: var(--border-radius);
-        }
-
-        @media (max-width: 768px) {
-            .filter-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .filter-btn {
-                width: 200px;
-            }
-            
-            .gallery-card {
-                height: 250px;
-            }
-        }
-    </style>
+   
 
     <script>
         // Gallery Filter Functionality

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/t&p.css">
 </head>
 <body>
     <!-- Top Bar -->
@@ -42,7 +43,7 @@
             <div class="row align-items-center">
                 <div class="col-md-3">
                     <div class="logo">
-                        <img src="https://via.placeholder.com/80x80/ff6b35/ffffff?text=MIP" alt="Magadh Institute of Pharmacy" class="logo-img">
+                        <img src="assets/logo/logo.png" alt="Magadh Institute of Pharmacy" class="logo-img">
                         <div class="logo-text">
                             <h4>Magadh Institute</h4>
                             <span>of Pharmacy</span>
@@ -167,7 +168,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="tp-image">
-                        <img src="https://via.placeholder.com/600x400/ff6b35/ffffff?text=Training+%26+Placement" alt="Training & Placement" class="img-fluid rounded shadow">
+                        <img src="assets/about/training-placement.png" alt="Training & Placement" class="img-fluid rounded shadow">
                     </div>
                 </div>
             </div>
@@ -243,7 +244,7 @@
     </section>
 
     <!-- Recruitment Partners -->
-    <section class="recruitment-partners py-5">
+    <!-- <section class="recruitment-partners py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
@@ -302,7 +303,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Placement Statistics -->
     <section class="placement-statistics py-5 bg-light">
@@ -547,287 +548,6 @@
     <!-- Custom JS -->
     <script src="js/script.js"></script>
 
-    <style>
-        .page-header {
-            background: var(--gradient-primary);
-            color: var(--white);
-            padding: 60px 0;
-            margin-bottom: 0;
-        }
-
-        .page-header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        .breadcrumb {
-            background: transparent;
-            margin: 0;
-        }
-
-        .breadcrumb-item a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-        }
-
-        .breadcrumb-item.active {
-            color: var(--white);
-        }
-
-        .tp-stats {
-            display: flex;
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .stat-item {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            line-height: 1;
-        }
-
-        .stat-label {
-            color: var(--gray);
-            font-weight: 500;
-            margin-top: 5px;
-        }
-
-        .service-card {
-            background: var(--white);
-            padding: 30px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            text-align: center;
-            transition: var(--transition);
-            height: 100%;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .service-icon {
-            width: 70px;
-            height: 70px;
-            background: var(--gradient-primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            font-size: 1.5rem;
-            color: var(--white);
-        }
-
-        .service-card h5 {
-            color: var(--dark-color);
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        .service-card p {
-            color: var(--gray);
-            margin: 0;
-        }
-
-        .partner-card {
-            background: var(--white);
-            padding: 20px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            text-align: center;
-            transition: var(--transition);
-        }
-
-        .partner-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .partner-logo {
-            width: 100%;
-            height: 80px;
-            object-fit: contain;
-            margin-bottom: 15px;
-        }
-
-        .partner-card h6 {
-            color: var(--dark-color);
-            margin: 0;
-            font-weight: 600;
-        }
-
-        .stat-card {
-            background: var(--white);
-            padding: 30px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            text-align: center;
-            transition: var(--transition);
-        }
-
-        .stat-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .stat-card .stat-icon {
-            width: 60px;
-            height: 60px;
-            background: var(--gradient-primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            font-size: 1.3rem;
-            color: var(--white);
-        }
-
-        .stat-card .stat-number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        .stat-card .stat-label {
-            color: var(--dark-color);
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-
-        .stat-card .stat-period {
-            color: var(--gray);
-            font-size: 0.9rem;
-        }
-
-        .program-card {
-            background: var(--white);
-            padding: 30px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            height: 100%;
-            transition: var(--transition);
-        }
-
-        .program-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .program-header {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .program-icon {
-            width: 50px;
-            height: 50px;
-            background: var(--gradient-primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            color: var(--white);
-        }
-
-        .program-header h5 {
-            color: var(--dark-color);
-            margin: 0;
-            font-weight: 600;
-        }
-
-        .program-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .program-list li {
-            padding: 8px 0;
-            color: var(--gray);
-            position: relative;
-            padding-left: 20px;
-        }
-
-        .program-list li:before {
-            content: "✓";
-            color: var(--primary-color);
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
-
-        .contact-tp-card {
-            background: var(--white);
-            padding: 40px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            border-left: 5px solid var(--primary-color);
-        }
-
-        .contact-tp-card h4 {
-            color: var(--dark-color);
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        .contact-tp-card p {
-            color: var(--gray);
-            margin-bottom: 20px;
-        }
-
-        .contact-details {
-            display: flex;
-            gap: 30px;
-        }
-
-        .contact-details .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: var(--gray);
-        }
-
-        .contact-details .contact-item i {
-            color: var(--primary-color);
-        }
-
-        @media (max-width: 768px) {
-            .tp-stats {
-                flex-direction: column;
-                gap: 20px;
-            }
-            
-            .contact-details {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .contact-tp-card .row {
-                text-align: center;
-            }
-            
-            .contact-tp-card .col-lg-4 {
-                margin-top: 20px;
-            }
-            
-            .program-header {
-                flex-direction: column;
-                text-align: center;
-                gap: 15px;
-            }
-        }
-    </style>
+  
 </body>
 </html>
