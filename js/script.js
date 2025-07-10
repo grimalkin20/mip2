@@ -57,19 +57,26 @@ function initNavigation() {
 // ===== Counter Animation =====
 function initCounters() {
     const counters = document.querySelectorAll('.stat-number');
-    const speed = 200; // Animation speed
+    const animationDuration = 2000; // 2 seconds
 
     const animateCounter = (counter) => {
         const target = parseInt(counter.getAttribute('data-count'));
-        const count = parseInt(counter.innerText);
-        const increment = target / speed;
+        let startTime = null;
 
-        if (count < target) {
-            counter.innerText = Math.ceil(count + increment);
-            setTimeout(() => animateCounter(counter), 1);
-        } else {
-            counter.innerText = target;
+        function step(timestamp) {
+            if (!startTime) startTime = timestamp;
+            const progress = timestamp - startTime;
+            const current = Math.min(Math.floor(progress / animationDuration * target), target);
+            counter.innerText = current;
+
+            if (progress < animationDuration) {
+                requestAnimationFrame(step);
+            } else {
+                counter.innerText = target;
+            }
         }
+
+        requestAnimationFrame(step);
     };
 
     // Intersection Observer for counters
@@ -86,9 +93,11 @@ function initCounters() {
     }, { threshold: 0.5 });
 
     counters.forEach(counter => {
+        counter.innerText = '0'; // Start from 0
         counterObserver.observe(counter);
     });
 }
+
 
 // ===== Scroll Animations =====
 function initScrollAnimations() {

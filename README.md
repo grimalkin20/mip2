@@ -186,7 +186,7 @@ To improve website loading speed, optimize images using these tools:
 ## 🏆 Accreditations
 
 - **AICTE Approved**: All India Council for Technical Education
-- **University Affiliated**: Magadh University, Bodh Gaya
+- **University Affiliated**: Aryabhatta Knowledge University, Bodh Gaya
 - **PCI Recognized**: Pharmacy Council of India
 - **ISO Certified**: ISO 9001:2015 for quality management
 
